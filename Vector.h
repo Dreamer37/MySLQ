@@ -186,7 +186,7 @@ template <typename T> static Rank binSearch ( T* A, T const& e, Rank lo, Rank hi
     return --lo;
 }
 
-#include "fibonacci\Fib.h"
+#include "Fib.h"
 template <typename T> static Rank fibSearch ( T* A, T const& e, Rank lo, Rank hi ) {
     Fib fib ( hi - lo );
     while ( lo < hi )
