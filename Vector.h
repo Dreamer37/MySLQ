@@ -1,5 +1,7 @@
 #include<iostream>
 
+#include "Fib.h"
+
 typedef int Rank;
 
 #define DEFAULT_CAPACITY 16
@@ -186,7 +188,6 @@ template <typename T> static Rank binSearch ( T* A, T const& e, Rank lo, Rank hi
     return --lo;
 }
 
-#include "Fib.h"
 template <typename T> static Rank fibSearch ( T* A, T const& e, Rank lo, Rank hi ) {
     Fib fib ( hi - lo );
     while ( lo < hi )
